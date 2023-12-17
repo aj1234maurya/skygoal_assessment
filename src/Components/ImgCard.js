@@ -8,9 +8,9 @@ function ImgCard(props) {
       <div className="cardBottom">
         <h2>{props.address}</h2>
         <div className="vector">
-          <img src="./images/vector.png" alt="vector" />
-          <img src="./images/vector.png" alt="vector" />
-          <img src="./images/vector.png" alt="vector" />
+          <img src="/images/Vector.png" alt="vector" />
+          <img src="/images/Vector.png" alt="vector" />
+          <img src="/images/Vector.png" alt="vector" />
         </div>
       </div>
     </div>
