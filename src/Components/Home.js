@@ -23,7 +23,7 @@ function Home() {
         <img className="ellipse4" src="./images/Ellipse4.png" alt="ellipse" />
       </div>
       <div className="imgDiv">
-        <img src="../images/Group171.png" alt="boy-pic" />
+        <img src="./images/Group171.png" alt="boy-pic" />
         <img className="ellipse3" src="./images/Ellipse3.png" alt="ellipse" />
         <img className="subtract" src="./images/Subtract2.png" alt="circle" />
       </div>
