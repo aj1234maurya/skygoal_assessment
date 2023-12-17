@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/skygoal_assessment/static/css/main.ec6550bc.css",
-    "main.js": "/skygoal_assessment/static/js/main.99cc14b7.js",
+    "main.css": "/skygoal_assessment/static/css/main.a52e0d1f.css",
+    "main.js": "/skygoal_assessment/static/js/main.54e2f177.js",
     "static/media/coll3.png": "/skygoal_assessment/static/media/coll3.f5275002af79520ef37f.png",
     "static/media/coll1.png": "/skygoal_assessment/static/media/coll1.dc93970509bb4cfa2797.png",
     "static/media/coll2.png": "/skygoal_assessment/static/media/coll2.5994799a62dd411f444e.png",
@@ -13,11 +13,11 @@
     "static/media/profile3.png": "/skygoal_assessment/static/media/profile3.d05fc877163f6b4c188a.png",
     "static/media/jenny3.png": "/skygoal_assessment/static/media/jenny3.a0b75c7711ea985cc716.png",
     "index.html": "/skygoal_assessment/index.html",
-    "main.ec6550bc.css.map": "/skygoal_assessment/static/css/main.ec6550bc.css.map",
-    "main.99cc14b7.js.map": "/skygoal_assessment/static/js/main.99cc14b7.js.map"
+    "main.a52e0d1f.css.map": "/skygoal_assessment/static/css/main.a52e0d1f.css.map",
+    "main.54e2f177.js.map": "/skygoal_assessment/static/js/main.54e2f177.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec6550bc.css",
-    "static/js/main.99cc14b7.js"
+    "static/css/main.a52e0d1f.css",
+    "static/js/main.54e2f177.js"
   ]
 }
