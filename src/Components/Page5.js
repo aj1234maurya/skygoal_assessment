@@ -19,12 +19,19 @@ function Page5() {
     setDeparture(event.target.value);
   }
 
+  // function handleStar(event) {
+  //   setStar(event.target.value);
+  // }
+
   function handleStar(event) {
-    setStar(event.target.value);
+    setStar(parseInt(event.target.value, 10));
   }
 
+  // function handleRoom(event) {
+  //   setRoom(event.target.value);
+  // }
   function handleRoom(event) {
-    setRoom(event.target.value);
+    setRoom(parseInt(event.target.value, 10));
   }
 
   function handleStarMinus() {
@@ -36,11 +43,11 @@ function Page5() {
   }
 
   function handleRoomMinus() {
-    setStar((prevRoom) => prevRoom - 1);
+    setRoom((prevRoom) => prevRoom - 1);
   }
 
   function handleRoomPlus() {
-    setStar((prevRoom) => prevRoom + 1);
+    setRoom((prevRoom) => prevRoom + 1);
   }
 
   return (
