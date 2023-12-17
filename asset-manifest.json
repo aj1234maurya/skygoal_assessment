@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/skygoal_assessment/static/css/main.75f8f0c1.css",
-    "main.js": "/skygoal_assessment/static/js/main.4be70c9e.js",
+    "main.js": "/skygoal_assessment/static/js/main.2ffdda03.js",
     "index.html": "/skygoal_assessment/index.html",
     "main.75f8f0c1.css.map": "/skygoal_assessment/static/css/main.75f8f0c1.css.map",
-    "main.4be70c9e.js.map": "/skygoal_assessment/static/js/main.4be70c9e.js.map"
+    "main.2ffdda03.js.map": "/skygoal_assessment/static/js/main.2ffdda03.js.map"
   },
   "entrypoints": [
     "static/css/main.75f8f0c1.css",
-    "static/js/main.4be70c9e.js"
+    "static/js/main.2ffdda03.js"
   ]
 }
