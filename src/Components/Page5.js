@@ -30,8 +30,8 @@ function Page5() {
   return (
     <div className="page5">
       <div className="page5Img">
-        <img className="subtract6" src="/images/Subtract6.png" alt="circle" />
-        <img src="/images/jenny.png" alt="girl" />
+        <img className="subtract6" src="./images/Subtract6.png" alt="circle" />
+        <img src="./images/jenny.png" alt="girl" />
       </div>
       <div className="bookNow">
         <h1>Book now</h1>
