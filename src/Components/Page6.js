@@ -7,17 +7,17 @@ function Page6() {
       <h1>Testimonials</h1>
       <div className="testimonialFlex">
         <Testimonials
-          src="/images/profile1.png"
+          src="./images/profile1.png"
           name="Corey Korsgaard"
           intro="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         />
         <Testimonials
-          src="/images/profile2.png"
+          src="./images/profile2.png"
           name="Jakob Aminoff"
           intro="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         />
         <Testimonials
-          src="/images/profile3.png"
+          src="./images/profile3.png"
           name="Carla Press"
           intro="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         />

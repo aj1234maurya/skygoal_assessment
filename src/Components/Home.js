@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="homeDiv">
       <div className="heading">
-        <img className="ellipse1" src="/images/Ellipse1.png" alt="ellipse" />
+        <img className="ellipse1" src="./images/Ellipse1.png" alt="ellipse" />
 
         <p>Discover the beauty of the tropics</p>
 

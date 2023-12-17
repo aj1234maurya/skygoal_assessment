@@ -4,8 +4,8 @@ function Page5() {
   const [city, setCity] = useState("");
   const [arrival, setArrival] = useState("");
   const [departure, setDeparture] = useState("");
-  const [room, setRoom] = useState("");
-  const [star, setStar] = useState("");
+  const [room, setRoom] = useState("1");
+  const [star, setStar] = useState("4");
 
   function handleCity(event) {
     setCity(event.target.value);
@@ -25,6 +25,22 @@ function Page5() {
 
   function handleRoom(event) {
     setRoom(event.target.value);
+  }
+
+  function handleStarMinus() {
+    setStar((prevStar) => prevStar - 1);
+  }
+
+  function handleStarPlus() {
+    setStar((prevStar) => prevStar + 1);
+  }
+
+  function handleRoomMinus() {
+    setStar((prevRoom) => prevRoom - 1);
+  }
+
+  function handleRoomPlus() {
+    setStar((prevRoom) => prevRoom + 1);
   }
 
   return (
@@ -69,7 +85,7 @@ function Page5() {
           <div>
             <p className="formData">Star</p>
             <div className="innerFlex">
-              <button className="buttonLeft">
+              <button onClick={handleStarMinus} className="buttonLeft">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="15"
@@ -89,7 +105,7 @@ function Page5() {
                 value={star}
                 onChange={handleStar}
               />
-              <button className="buttonRight">
+              <button onClick={handleStarPlus} className="buttonRight">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="15"
@@ -108,7 +124,7 @@ function Page5() {
           <div>
             <p className="formData">Room</p>
             <div className="innerFlex">
-              <button className="buttonLeft">
+              <button onClick={handleRoomMinus} className="buttonLeft">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="15"
@@ -128,7 +144,7 @@ function Page5() {
                 value={room}
                 onChange={handleRoom}
               />
-              <button className="buttonRight">
+              <button onClick={handleRoomPlus} className="buttonRight">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="15"
