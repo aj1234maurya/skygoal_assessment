@@ -5,7 +5,7 @@ function Page2() {
   return (
     <div className="page2">
       <div className="cardDiv">
-        <img className="ellipse5" src="/images/ellipse5.png" alt="ellipse" />
+        <img className="ellipse5" src="./images/ellipse5.png" alt="ellipse" />
         <Card
           src="./images/jenny2.png"
           name="Jenny Wilson"
@@ -23,7 +23,7 @@ function Page2() {
         />
       </div>
       <div className="page2Right">
-        <img className="subtract3" src="/images/Subtract3.png" alt="circle" />
+        <img className="subtract3" src="./images/Subtract3.png" alt="circle" />
 
         <h1>
           Tropical Adventure <br />
