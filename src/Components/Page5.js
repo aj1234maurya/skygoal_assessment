@@ -4,8 +4,8 @@ function Page5() {
   const [city, setCity] = useState("");
   const [arrival, setArrival] = useState("");
   const [departure, setDeparture] = useState("");
-  const [room, setRoom] = useState("1");
-  const [star, setStar] = useState("4");
+  const [room, setRoom] = useState(1);
+  const [star, setStar] = useState(4);
 
   function handleCity(event) {
     setCity(event.target.value);
