@@ -461,6 +461,14 @@ nav button {
   left: 100%;
   top: 20%;
 }
+.page5Img .rectangle {
+  height: 5vw;
+  width: 15vw;
+  top: 60%;
+  left: 55%;
+  position: absolute;
+  z-index: -10;
+}
 .page5Img img {
   height: 45vw;
   width: 30vw;
@@ -689,9 +697,25 @@ nav button {
   }
 }
 
-@media (min-width: 580px) and (max-width: 999px) {
+@media (min-width: 600px) and (max-width: 999px) {
   nav {
     margin: 1vw 4vw 1vw 10vw;
+  }
+  .page6 .bottom {
+    margin-top: 12vw;
+  }
+  .page6 h4 {
+    margin-top: 2vw;
+  }
+}
+
+@media (max-width: 599px) {
+  nav {
+    margin: 1vw 4vw 1vw 10vw;
+  }
+  .homeDiv {
+    height: 100vw;
+    flex-direction: column;
   }
   .page6 .bottom {
     margin-top: 12vw;
