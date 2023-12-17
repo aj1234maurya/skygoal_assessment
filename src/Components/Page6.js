@@ -1,5 +1,8 @@
 import React from "react";
 import Testimonials from "./Testimonials";
+import profile1 from "../assests/images/profile1.png";
+import profile2 from "../assests/images/profile2.png";
+import profile3 from "../assests/images/profile3.png";
 
 function Page6() {
   return (
@@ -7,17 +10,17 @@ function Page6() {
       <h1>Testimonials</h1>
       <div className="testimonialFlex">
         <Testimonials
-          src="./images/profile1.png"
+          src={profile1}
           name="Corey Korsgaard"
           intro="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         />
         <Testimonials
-          src="./images/profile2.png"
+          src={profile2}
           name="Jakob Aminoff"
           intro="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         />
         <Testimonials
-          src="./images/profile3.png"
+          src={profile3}
           name="Carla Press"
           intro="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
         />

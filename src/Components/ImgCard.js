@@ -1,4 +1,5 @@
 import React from "react";
+import Vector from "../assests/images/Vector.png";
 
 function ImgCard(props) {
   return (
@@ -8,9 +9,9 @@ function ImgCard(props) {
       <div className="cardBottom">
         <h2>{props.address}</h2>
         <div className="vector">
-          <img src="./images/Vector.png" alt="vector" />
-          <img src="./images/Vector.png" alt="vector" />
-          <img src="./images/Vector.png" alt="vector" />
+          <img src={Vector} alt="vector" />
+          <img src={Vector} alt="vector" />
+          <img src={Vector} alt="vector" />
         </div>
       </div>
     </div>

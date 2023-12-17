@@ -1,29 +1,34 @@
 import React from "react";
 import Card from "./Card";
+import Ellipse5 from "../assests/images/Ellipse5.png";
+import jenny2 from "../assests/images/jenny2.png";
+import jenny3 from "../assests/images/jenny3.png";
+import jenny4 from "../assests/images/jenny4.png";
+import Subtract3 from "../assests/images/Subtract3.png";
 
 function Page2() {
   return (
     <div className="page2">
       <div className="cardDiv">
-        <img className="ellipse5" src="./images/Ellipse5.png" alt="ellipse" />
+        <img className="ellipse5" src={Ellipse5} alt="ellipse" />
         <Card
-          src="./images/jenny2.png"
+          src={jenny2}
           name="Jenny Wilson"
           sentence="Lorem ipsum dolor sit amet, consectetur adipiscing..."
         />
         <Card
-          src="./images/jenny3.png"
+          src={jenny3}
           name="Jenny Wilson"
           sentence="Lorem ipsum dolor sit amet, consectetur adipiscing..."
         />
         <Card
-          src="./images/jenny4.png"
+          src={jenny4}
           name="Jenny Wilson"
           sentence="Lorem ipsum dolor sit amet, consectetur adipiscing..."
         />
       </div>
       <div className="page2Right">
-        <img className="subtract3" src="./images/Subtract3.png" alt="circle" />
+        <img className="subtract3" src={Subtract3} alt="circle" />
 
         <h1>
           Tropical Adventure <br />

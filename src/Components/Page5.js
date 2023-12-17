@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Subtract6 from "../assests/images/Subtract6.png";
+import jenny from "../assests/images/jenny.png";
+import Rectangle from "../assests/images/Rectangle.png";
 
 function Page5() {
   const [city, setCity] = useState("");
@@ -19,17 +22,10 @@ function Page5() {
     setDeparture(event.target.value);
   }
 
-  // function handleStar(event) {
-  //   setStar(event.target.value);
-  // }
-
   function handleStar(event) {
     setStar(parseInt(event.target.value, 10));
   }
 
-  // function handleRoom(event) {
-  //   setRoom(event.target.value);
-  // }
   function handleRoom(event) {
     setRoom(parseInt(event.target.value, 10));
   }
@@ -53,8 +49,9 @@ function Page5() {
   return (
     <div className="page5">
       <div className="page5Img">
-        <img className="subtract6" src="./images/Subtract6.png" alt="circle" />
-        <img src="./images/jenny.png" alt="girl" />
+        <img className="subtract6" src={Subtract6} alt="circle" />
+        <img src={jenny} alt="girl" />
+        <img className="rectangle" src={Rectangle} alt="rectangle" />
       </div>
       <div className="bookNow">
         <h1>Book now</h1>
@@ -108,7 +105,8 @@ function Page5() {
               </button>
               <input
                 className="otherInput"
-                placeholder="4"
+                type="number"
+                placeholder=""
                 value={star}
                 onChange={handleStar}
               />
@@ -147,7 +145,8 @@ function Page5() {
               </button>
               <input
                 className="otherInput"
-                placeholder="1"
+                placeholder=""
+                type="number"
                 value={room}
                 onChange={handleRoom}
               />

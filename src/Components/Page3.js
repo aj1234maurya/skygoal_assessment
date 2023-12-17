@@ -1,5 +1,11 @@
 import React from "react";
 import ImgCard from "./ImgCard";
+import coll1 from "../assests/images/coll1.png";
+import coll2 from "../assests/images/coll2.png";
+import coll3 from "../assests/images/coll3.png";
+import coll4 from "../assests/images/coll4.png";
+import leftarrow from "../assests/images/leftarrow.png";
+import rightarrow from "../assests/images/rightarrow.png";
 
 function Page3() {
   return (
@@ -7,32 +13,32 @@ function Page3() {
       <h1>Our Destinations</h1>
       <div className="page3Flex">
         <ImgCard
-          src="./images/coll1.png"
+          src={coll1}
           university="Harvard University"
           address="Cambridge, Massachusetts, UK"
         />
         <ImgCard
-          src="./images/coll2.png"
+          src={coll2}
           university="Oxford University"
           address="Oxford, England"
         />
         <ImgCard
-          src="./images/coll3.png"
+          src={coll3}
           university="Stanford University"
           address="Stanford, California"
         />
         <ImgCard
-          src="./images/coll4.png"
+          src={coll4}
           university="Nanyang Technological University"
           address="Nanyang Ave, Singapura"
         />
       </div>
       <div className="arrowDiv">
-        <img src="./images/leftarrow.png" alt="left-arrow" />
+        <img src={leftarrow} alt="left-arrow" />
         <h2>
           2 <span>/ 140</span>
         </h2>
-        <img src="./images/rightarrow.png" alt="right-arrow" />
+        <img src={rightarrow} alt="right-arrow" />
       </div>
     </div>
   );
