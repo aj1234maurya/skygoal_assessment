@@ -13,7 +13,7 @@ function Home() {
       <div className="heading">
         <img className="ellipse1" src={Ellipse1} alt="ellipse" />
 
-        <p>Discover the beauty of the tropics</p>
+        <p className="firstPar">Discover the beauty of the tropics</p>
 
         <h1>Tropical</h1>
         <img className="ellipse2" src={Ellipse2} alt="ellipse" />

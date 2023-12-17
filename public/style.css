@@ -3,11 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* html,
 body {
   width: 100%;
   height: 100%;
-}
+} */
 
 /* navbar */
 
@@ -20,6 +27,28 @@ nav {
   font-family: Inter;
   font-weight: 500;
 }
+
+/* drop-down */
+.nav-list {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+.drop {
+  display: none;
+  display: flex;
+  flex-direction: column;
+}
+.menu-icon svg {
+  display: none;
+  height: 6vw;
+  width: 6vw;
+}
+
+/* drop-down end */
+
 .navLeft {
   display: flex;
   gap: 4vw;
@@ -473,6 +502,7 @@ nav button {
   height: 45vw;
   width: 30vw;
 }
+
 .bookNow {
   margin-top: 8vw;
   border-radius: 20px;
@@ -697,9 +727,15 @@ nav button {
   }
 }
 
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 800px) and (max-width: 999px) {
   nav {
-    margin: 1vw 4vw 1vw 10vw;
+    margin: 1vw 4vw 1vw 1vw;
+  }
+  .page2Right h4 {
+    font-size: 2vw;
+  }
+  .page2Right ul {
+    font-size: 1.7vw;
   }
   .page6 .bottom {
     margin-top: 12vw;
@@ -708,19 +744,292 @@ nav button {
     margin-top: 2vw;
   }
 }
-
-@media (max-width: 599px) {
+@media (max-width: 799px) {
+  /* navbar  */
   nav {
-    margin: 1vw 4vw 1vw 10vw;
+    margin-left: 4vw;
+    width: 80%;
   }
-  .homeDiv {
-    height: 100vw;
+  .navLeft {
+    display: none;
+  }
+  .navRight {
+    display: none;
+  }
+  .nav-list {
     flex-direction: column;
+    top: calc(-14vw);
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
   }
-  .page6 .bottom {
-    margin-top: 12vw;
+  .nav-list.show {
+    padding-top: 1vw;
+    width: 70%;
+    height: 30vw;
+    display: flex;
   }
-  .page6 h4 {
-    margin-top: 2vw;
+  .nav-list li {
+    font-size: 3vw;
+    text-align: center;
+    padding: 1vw;
+  }
+  .menu-icon svg {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* homediv */
+
+  .homeDiv {
+    height: 130vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heading {
+    width: 70vw;
+  }
+  .heading .firstPar {
+    font-size: 3vw;
+  }
+  .heading h1 {
+    font-size: 10vw;
+  }
+  .headingBottom {
+    font-size: 2vw;
+  }
+  .imgDiv {
+    text-align: center;
+    width: 100%;
+  }
+  .heading .ellipse4 {
+    height: 3vw;
+  }
+  .imgDiv .ellipse3 {
+    width: 3vw;
+    height: 3vw;
+    top: 100%;
+  }
+  .subtract {
+    height: 2vw;
+    width: 2vw;
+  }
+  .imgDiv img {
+    height: 50vw;
+    width: 40vw;
+  }
+  .imgDiv .subtract {
+    height: 3.4vw;
+    width: 3.4vw;
+  }
+  .heading button {
+    padding: 1.3vw 2.5vw;
+    font-size: 3vw;
+  }
+
+  /* page2Div */
+
+  .page2 {
+    flex-direction: column;
+    height: 130vw;
+  }
+  .cardDiv {
+    margin-top: 6vw;
+    padding: 4vw 0;
+  }
+  .cardDiv > img {
+    top: 105%;
+    left: -30%;
+    right: 0;
+    height: 5vw;
+    width: 5vw;
+  }
+  .flexProfile {
+    width: 45vw;
+  }
+  .flexProfile .profilePic {
+    height: 10vw;
+    width: 10vw;
+  }
+  .flexProfile.info.nameHeading {
+    font-size: 2.5vw;
+  }
+  .flexProfile.info.detailHeading {
+    font-size: 2vw;
+  }
+  .page2Right {
+    padding: 4vw;
+  }
+  .page2Right img {
+    height: 15vw;
+    width: 15vw;
+    top: -15%;
+    left: 80%;
+  }
+  .page2Right h1 {
+    font-size: 5vw;
+  }
+  .page2Right span {
+    font-size: 4vw;
+  }
+  .page2Right h4 {
+    font-size: 2.6vw;
+  }
+  .page2Right ul {
+    font-size: 2.4vw;
+    line-height: 2;
+  }
+  .page2Right button {
+    padding: 1.5vw 4vw;
+    font-size: 2.4vw;
+  }
+
+  /* page3div */
+
+  .page3 {
+    height: 80vw;
+  }
+  .page3 > h1 {
+    font-size: 5vw;
+  }
+  .page3Flex {
+    margin-top: 10vw;
+    margin-left: 0;
+  }
+  .imgCard {
+    width: 27vw;
+  }
+  .imgCard > img {
+    height: 34vw;
+    width: 27vw;
+  }
+  .imgCard h1 {
+    font-size: 2.3vw;
+  }
+  .imgCard h2 {
+    font-size: 1.4vw;
+  }
+  .arrowDiv img {
+    height: 4vw;
+    width: 4vw;
+  }
+  .arrowDiv h2 {
+    font-size: 3vw;
+  }
+  .arrowDiv span {
+    font-size: 2vw;
+  }
+
+  /* page4div */
+
+  .page4 {
+    height: 55vw;
+    margin-top: 3vw;
+    padding: 0 7vw;
+    justify-content: space-between;
+  }
+  .pag4left h3 {
+    margin-bottom: 1vw;
+    font-size: 2.4vw;
+  }
+  .pag4left h1 {
+    font-size: 3.4vw;
+  }
+  .pag4left h1 span {
+    font-size: 2.5vw;
+  }
+  .pag4left ul {
+    font-size: 2.2vw;
+    line-height: 2;
+  }
+  .pag4left .ellipse6 {
+    height: 3.5vw;
+  }
+  .pag4left .subtract5 {
+    height: 7vw;
+    width: 7vw;
+    left: 67%;
+  }
+  .pag4left .ellipse7 {
+    height: 3vw;
+  }
+  .girlPic .girl {
+    height: 50vw;
+    width: 40vw;
+  }
+  .girlPic .subtract4 {
+    height: 15vw;
+    width: 15vw;
+  }
+  .pag4left .ellipse8 {
+    height: 2vw;
+  }
+
+  /* page5div */
+  .page5 {
+    height: 70vw;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+  .page5Img img {
+    height: 60vw;
+    width: 40vw;
+  }
+  .page5Img .subtract6 {
+    height: 9vw;
+    width: 9vw;
+  }
+  .bookNow {
+    width: 38vw;
+  }
+  .bookNow h1 {
+    font-size: 3.5vw;
+  }
+  .bookNow p {
+    font-size: 1.7vw;
+  }
+  .bookNow .formData {
+    font-size: 1.3vw;
+  }
+  .bookNow .cityInput {
+    padding: 1.5vw 21vw 1.5vw 1vw !important;
+    font-size: 1.5vw;
+    width: 34.5vw;
+  }
+  .bookNow .otherInput {
+    font-size: 1.5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    width: 17vw;
+  }
+  .innerFlex svg {
+    height: 1vw !important;
+    width: 1vw !important;
+  }
+  .bookButton {
+    padding: 1vw 1.3vw;
+    font-size: 1.5vw;
+    margin-top: 4vw;
+    margin-bottom: 1vw;
+  }
+
+  /* page6div */
+  .page6 {
+    height: 65vw;
+  }
+  .page6 > h1:first-child {
+    font-size: 5vw;
+  }
+  .testCard {
+    width: 25vw;
+  }
+  .testCard .profilePic {
+    height: 10vw;
+    width: 10vw;
   }
 }
