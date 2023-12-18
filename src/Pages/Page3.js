@@ -1,11 +1,11 @@
 import React from "react";
-import ImgCard from "./ImgCard";
-import coll1 from "../assests/images/coll1.png";
-import coll2 from "../assests/images/coll2.png";
-import coll3 from "../assests/images/coll3.png";
-import coll4 from "../assests/images/coll4.png";
-import leftarrow from "../assests/images/leftarrow.png";
-import rightarrow from "../assests/images/rightarrow.png";
+import ImgCard from "../Components/ImgCard";
+import coll1 from "../assets/images/coll1.png";
+import coll2 from "../assets/images/coll2.png";
+import coll3 from "../assets/images/coll3.png";
+import coll4 from "../assets/images/coll4.png";
+import leftarrow from "../assets/images/leftarrow.png";
+import rightarrow from "../assets/images/rightarrow.png";
 
 function Page3() {
   return (

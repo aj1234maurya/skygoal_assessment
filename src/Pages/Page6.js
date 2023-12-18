@@ -1,8 +1,8 @@
 import React from "react";
-import Testimonials from "./Testimonials";
-import profile1 from "../assests/images/profile1.png";
-import profile2 from "../assests/images/profile2.png";
-import profile3 from "../assests/images/profile3.png";
+import Testimonials from "../Components/Testimonials";
+import profile1 from "../assets/images/profile1.png";
+import profile2 from "../assets/images/profile2.png";
+import profile3 from "../assets/images/profile3.png";
 
 function Page6() {
   return (
@@ -39,6 +39,7 @@ function Page6() {
         <a href=" ">Terms of Use</a>
         <a href=" ">Sales and Refunds</a>
         <a href=" ">Legal</a>
+
         <a className="boldChange" href=" ">
           About
         </a>
@@ -54,6 +55,31 @@ function Page6() {
         <a className="boldChange" href=" ">
           Joins
         </a>
+      </div>
+      <div className="anchorDivSmall">
+        <div className="leftAnchor">
+          <a href=" ">Privacy Policy</a>
+          <a href=" ">Terms of Use</a>
+          <a href=" ">Sales and Refunds</a>
+          <a href=" ">Legal</a>
+        </div>
+        <div className="rightAnchor">
+          <a className="boldChange" href=" ">
+            About
+          </a>
+          <a className="boldChange" href=" ">
+            Schedules
+          </a>
+          <a className="boldChange" href=" ">
+            Pricing
+          </a>
+          <a className="boldChange" href=" ">
+            Membership
+          </a>
+          <a className="boldChange" href=" ">
+            Joins
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
-import Ellipse1 from "../assests/images/Ellipse1.png";
-import Ellipse2 from "../assests/images/Ellipse2.png";
-import Ellipse3 from "../assests/images/Ellipse3.png";
-import Subtract from "../assests/images/Subtract.png";
-import Subtract2 from "../assests/images/Subtract2.png";
-import Ellipse4 from "../assests/images/Ellipse4.png";
-import Group171 from "../assests/images/Group171.png";
+import Ellipse1 from "../assets/images/Ellipse1.png";
+import Ellipse2 from "../assets/images/Ellipse2.png";
+import Ellipse3 from "../assets/images/Ellipse3.png";
+import Subtract from "../assets/images/Subtract.png";
+import Subtract2 from "../assets/images/Subtract2.png";
+import Ellipse4 from "../assets/images/Ellipse4.png";
+import Group171 from "../assets/images/Group171.png";
 
 function Home() {
   return (

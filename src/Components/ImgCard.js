@@ -1,5 +1,5 @@
 import React from "react";
-import Vector from "../assests/images/Vector.png";
+import Vector from "../assets/images/Vector.png";
 
 function ImgCard(props) {
   return (

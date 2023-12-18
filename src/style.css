@@ -6,6 +6,7 @@
 
 html,
 body {
+  height: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -73,7 +74,9 @@ nav button {
   font-family: Inter;
   font-weight: 500;
 }
-
+.offer {
+  color: #7d7d7d;
+}
 /* homepage */
 
 .homeDiv {
@@ -581,10 +584,10 @@ nav button {
   height: 0.6vw !important;
   width: 0.6vw !important;
 }
-.innerFlex input {
+.innerFlex #innerInput {
   border-radius: 0 !important;
   text-align: center;
-  width: 3.8vw !important;
+  width: 3.8vw;
   padding-left: 0 !important;
 }
 .innerFlex .buttonLeft {
@@ -700,6 +703,10 @@ nav button {
   justify-content: center;
   gap: 3vw;
 }
+.anchorDivSmall {
+  display: none;
+}
+
 .anchorDiv a {
   text-decoration: none;
   color: var(--black-fonts-headings, #2d2e2e);
@@ -727,7 +734,7 @@ nav button {
   }
 }
 
-@media (min-width: 800px) and (max-width: 999px) {
+/* @media (min-width: 800px) and (max-width: 999px) {
   nav {
     margin: 1vw 4vw 1vw 1vw;
   }
@@ -743,18 +750,33 @@ nav button {
   .page6 h4 {
     margin-top: 2vw;
   }
-}
-@media (max-width: 799px) {
+} */
+@media (max-width: 999px) {
   /* navbar  */
   nav {
-    margin-left: 4vw;
-    width: 80%;
+    margin: 0;
+    background-color: white;
+    top: 0%;
+    position: sticky;
+    padding: 1vw 1vw 1vw 4vw;
+
+    width: 100%;
+    z-index: 100;
   }
   .navLeft {
     display: none;
   }
   .navRight {
-    display: none;
+    align-self: flex-start;
+  }
+  .navRight a {
+    font-size: 3.5vw;
+  }
+  .navRight button {
+    padding: 1vw 2vw;
+  }
+  .navRight button {
+    font-size: 3.5vw;
   }
   .nav-list {
     flex-direction: column;
@@ -772,7 +794,7 @@ nav button {
   }
   .nav-list li {
     font-size: 3vw;
-    text-align: center;
+    text-align: justify;
     padding: 1vw;
   }
   .menu-icon svg {
@@ -836,33 +858,35 @@ nav button {
 
   .page2 {
     flex-direction: column;
-    height: 130vw;
+    height: 180vw;
   }
   .cardDiv {
     margin-top: 6vw;
     padding: 4vw 0;
   }
   .cardDiv > img {
-    top: 105%;
-    left: -30%;
+    top: 113%;
+    left: -10%;
     right: 0;
-    height: 5vw;
-    width: 5vw;
+    height: 7vw;
+    width: 7vw;
   }
   .flexProfile {
-    width: 45vw;
+    width: 70vw;
   }
   .flexProfile .profilePic {
-    height: 10vw;
-    width: 10vw;
+    height: 20vw;
+    width: 20vw;
   }
-  .flexProfile.info.nameHeading {
-    font-size: 2.5vw;
+  .info h1 {
+    font-size: 4vw;
   }
-  .flexProfile.info.detailHeading {
-    font-size: 2vw;
+
+  .info h2 {
+    font-size: 3vw;
   }
   .page2Right {
+    margin-top: 9vw;
     padding: 4vw;
   }
   .page2Right img {
@@ -872,19 +896,21 @@ nav button {
     left: 80%;
   }
   .page2Right h1 {
-    font-size: 5vw;
+    font-size: 6.5vw;
+    line-height: 1.1;
   }
   .page2Right span {
-    font-size: 4vw;
+    font-size: 5.5vw;
   }
   .page2Right h4 {
-    font-size: 2.6vw;
+    font-size: 3vw;
   }
   .page2Right ul {
-    font-size: 2.4vw;
+    font-size: 3vw;
     line-height: 2;
   }
   .page2Right button {
+    margin-top: 6vw;
     padding: 1.5vw 4vw;
     font-size: 2.4vw;
   }
@@ -892,27 +918,31 @@ nav button {
   /* page3div */
 
   .page3 {
-    height: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vw;
   }
   .page3 > h1 {
-    font-size: 5vw;
+    font-size: 6.5vw;
   }
   .page3Flex {
-    margin-top: 10vw;
     margin-left: 0;
   }
   .imgCard {
-    width: 27vw;
+    border-radius: 10px;
+    width: 33vw;
   }
   .imgCard > img {
-    height: 34vw;
-    width: 27vw;
+    height: 39vw;
+    width: 33vw;
   }
   .imgCard h1 {
-    font-size: 2.3vw;
+    font-size: 3vw;
   }
   .imgCard h2 {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
+    margin-bottom: 2.3vw;
   }
   .arrowDiv img {
     height: 4vw;
@@ -923,6 +953,10 @@ nav button {
   }
   .arrowDiv span {
     font-size: 2vw;
+  }
+  .vector img {
+    height: 0.5vw;
+    width: 0.5vw;
   }
 
   /* page4div */
@@ -972,64 +1006,147 @@ nav button {
 
   /* page5div */
   .page5 {
-    height: 70vw;
+    height: 160vw;
+    flex-direction: column-reverse;
     justify-content: space-between;
     padding: 0 5vw;
   }
   .page5Img img {
-    height: 60vw;
-    width: 40vw;
+    height: 75vw;
+    width: 55vw;
   }
   .page5Img .subtract6 {
-    height: 9vw;
-    width: 9vw;
+    height: 14vw;
+    width: 14vw;
+  }
+  .page5Img .rectangle {
+    height: 8vw;
+    left: 77%;
   }
   .bookNow {
-    width: 38vw;
+    padding: 3vw 5vw 3vw 3vw;
+    width: 55vw;
   }
   .bookNow h1 {
-    font-size: 3.5vw;
+    font-size: 5vw;
   }
   .bookNow p {
-    font-size: 1.7vw;
+    font-size: 2.5vw;
+  }
+  .bookNow .loremPara {
+    margin-bottom: 4vw;
   }
   .bookNow .formData {
-    font-size: 1.3vw;
+    font-size: 2vw;
   }
   .bookNow .cityInput {
-    padding: 1.5vw 21vw 1.5vw 1vw !important;
-    font-size: 1.5vw;
-    width: 34.5vw;
+    padding: 1.5vw 2vw 1.5vw 1vw !important;
+    font-size: 2.5vw;
+    width: 48vw;
+    margin-bottom: 1vw;
   }
   .bookNow .otherInput {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
-    width: 17vw;
+    width: 23vw;
+    margin-bottom: 1vw;
+  }
+  .flex-div {
+    gap: 1.5vw;
   }
   .innerFlex svg {
-    height: 1vw !important;
-    width: 1vw !important;
+    height: 1.3vw !important;
+    width: 1.3vw !important;
+  }
+  .innerFlex .buttonLeft {
+    height: 6vw;
+    padding: 0vw 2vw;
+  }
+  .innerFlex #innerInput {
+    width: 12.5vw;
+  }
+  .innerFlex .buttonRight {
+    height: 6vw;
+    padding: 0vw 2vw;
   }
   .bookButton {
-    padding: 1vw 1.3vw;
-    font-size: 1.5vw;
+    padding: 1.6vw 3vw;
+    font-size: 2.5vw;
     margin-top: 4vw;
     margin-bottom: 1vw;
   }
 
   /* page6div */
   .page6 {
-    height: 65vw;
+    margin-top: 8vw;
+    height: 180vw;
   }
   .page6 > h1:first-child {
-    font-size: 5vw;
+    font-size: 7vw;
+  }
+  .testimonialFlex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
   .testCard {
-    width: 25vw;
+    margin-top: 6vw;
+    width: 45vw;
   }
   .testCard .profilePic {
-    height: 10vw;
-    width: 10vw;
+    height: 20vw;
+    width: 20vw;
+  }
+  .testCard h2 {
+    font-size: 3.5vw;
+  }
+  .testCard hr {
+    width: 28vw;
+    margin-top: 2vw;
+  }
+  .testCard h3 {
+    line-height: 1.5;
+    font-size: 3vw;
+  }
+  .page6 .bottom {
+    margin-top: 13vw;
+  }
+  .page6 .bottomH1 {
+    width: 77vw;
+    font-size: 4.5vw;
+  }
+  .page6 h4 {
+    margin-top: 3.5vw;
+    font-size: 3vw;
+  }
+  .anchorDiv {
+    display: none;
+  }
+
+  .anchorDivSmall {
+    text-align: center;
+    margin-top: 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+    padding-bottom: 6vw;
+  }
+  .anchorDivSmall a {
+    text-decoration: none;
+    color: var(--black-fonts-headings, #2d2e2e);
+    font-family: Inter;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .leftAnchor {
+    display: flex;
+    justify-content: space-around;
+  }
+  .rightAnchor {
+    display: flex;
+    justify-content: space-around;
   }
 }

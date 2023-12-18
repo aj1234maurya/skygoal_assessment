@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Subtract6 from "../assests/images/Subtract6.png";
-import jenny from "../assests/images/jenny.png";
-import Rectangle from "../assests/images/Rectangle.png";
+import Subtract6 from "../assets/images/Subtract6.png";
+import jenny from "../assets/images/jenny.png";
+import Rectangle from "../assets/images/Rectangle.png";
 
 function Page5() {
   const [city, setCity] = useState("");
@@ -105,6 +105,7 @@ function Page5() {
               </button>
               <input
                 className="otherInput"
+                id="innerInput"
                 type="number"
                 placeholder=""
                 value={star}
@@ -145,6 +146,7 @@ function Page5() {
               </button>
               <input
                 className="otherInput"
+                id="innerInput"
                 placeholder=""
                 type="number"
                 value={room}

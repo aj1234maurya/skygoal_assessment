@@ -34,7 +34,6 @@ function NavBar() {
             </ul>
           </div>
         </div>
-
         <div className="navLeft">
           <a href=" ">Home</a>
           <a href=" ">About</a>
@@ -43,7 +42,9 @@ function NavBar() {
           <a href=" ">Pricing</a>
         </div>
         <div className="navRight">
-          <a href=" ">Offers</a>
+          <a className="offer" href=" ">
+            Offers
+          </a>
           <button>Courses</button>
         </div>
       </nav>

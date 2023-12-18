@@ -1,10 +1,10 @@
 import React from "react";
-import Ellipse6 from "../assests/images/Ellipse6.png";
-import Subtract5 from "../assests/images/Subtract5.png";
-import Ellipse7 from "../assests/images/Ellipse7.png";
-import Ellipse8 from "../assests/images/Ellipse8.png";
-import girl1 from "../assests/images/girl1.png";
-import Subtract4 from "../assests/images/Subtract4.png";
+import Ellipse6 from "../assets/images/Ellipse6.png";
+import Subtract5 from "../assets/images/Subtract5.png";
+import Ellipse7 from "../assets/images/Ellipse7.png";
+import Ellipse8 from "../assets/images/Ellipse8.png";
+import girl1 from "../assets/images/girl1.png";
+import Subtract4 from "../assets/images/Subtract4.png";
 
 function Page4() {
   return (
