@@ -11,11 +11,11 @@ function NavBar() {
     <>
       <nav>
         <div className="drop">
-          <div class="menu-icon" onClick={toggleMenu}>
+          <div className="menu-icon" onClick={toggleMenu}>
             <IoMenuSharp />
           </div>
           <div>
-            <ul class="nav-list">
+            <ul className="nav-list">
               <li>
                 <a href=" ">Home</a>
               </li>
